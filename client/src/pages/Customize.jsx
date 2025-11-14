@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from 'react'
 import { RiImageAddLine, RiArrowRightLine, RiCheckboxCircleFill } from 'react-icons/ri'
-import { userDataContext } from '../context/userContext'
+import { userDataContext } from '../context/UserContext'
 import { FaArrowLeft } from "react-icons/fa";
 // Import your images (these paths should be correct based on your project structure)
 import image1 from "../assets/image1.png"
