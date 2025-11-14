@@ -85,7 +85,7 @@ voice_recognizer = sr.Recognizer()
 # Configure CORS
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:5173", "http://127.0.0.1:5173"],
+        "origins": ["http://localhost:5173", "http://127.0.0.1:5173" , "https://jarvis-gamma-seven.vercel.app"],
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization"],
         "supports_credentials": True
@@ -95,6 +95,7 @@ CORS(app, resources={
 @app.after_request
 def after_request(response):
     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
+    response.headers.add('Access-Control-Allow-Origin', 'https://jarvis-gamma-seven.vercel.app')
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
     response.headers.add('Access-Control-Allow-Credentials', 'true')
