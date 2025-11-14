@@ -5,7 +5,7 @@ import { FaRobot } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import axios from "axios";
-import { userDataContext } from '../context/userContext'
+import { userDataContext } from '../context/UserContext'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
