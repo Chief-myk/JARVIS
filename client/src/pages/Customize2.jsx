@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { userDataContext } from '../context/userContext'
+import { userDataContext } from '../context/UserContext'
 import { useNavigate } from 'react-router-dom'
 import { RiRobotLine, RiArrowRightLine, RiCheckboxCircleFill } from 'react-icons/ri'
 import axios from 'axios'
